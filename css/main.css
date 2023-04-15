@@ -1,0 +1,352 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Cairo", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  text-align: center;
+  color: #a33183;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+
+/* Start Nav Bar Style */
+.logo img{
+  width: 150px;
+  height: 150px;
+  margin-left: 30px;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 100px; */
+}
+.nav-items ul{
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+.nav-items li{
+ margin-right: 50px;
+}
+.nav-items a{
+  text-decoration: none;
+  color: #961471;
+  font-weight: bold;
+}
+.nav-items ul{
+  list-style:  none;
+}
+.menu-icon{
+  display: none;
+  margin-right: 30px;
+}
+.nav ul li a::after {
+  content: "";
+  position: absolute;
+  border-bottom: 2px solid #b3dbd9;
+  width: 0;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  transition:0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.nav ul li a:hover::after {
+  width: 100%;
+}
+.nav li a{
+  position: relative;
+}
+.menu-btn{
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 15px;
+  width: fit-content;
+  background-color: #fff;
+  box-shadow: 1px 1px #961471;
+  cursor: pointer;
+}
+
+  @media (max-width:768px) {
+    .menu-icon{
+      display: block;
+    }
+    .nav-items ul{
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .nav ul {
+      display: inline-block;
+      position: absolute;
+      top: 150px;
+      left: 0;
+      background-color: #b3dbd9;
+      width: 100%;
+      overflow: hidden;
+      opacity: 90%;
+      transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
+      color: #a33183;
+    }
+  
+    .nav ul li {
+      margin: 15px 0px 20px 30px;
+      text-align: left;
+      z-index: 1;
+    }
+  
+    .nav ul li a {
+      color: var(--primarycolor);
+    }
+  
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+/* End Nav Bar Style */
+
+
+
+/* Start Jumbotron Style */
+.carousel-item img {
+  min-width: 40%;
+  height: 70vh;
+  object-fit: cover;
+}
+.jumbotron::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: grey;
+    opacity: 40%;
+}
+/* End Jumbotron Style */
+
+
+
+/* Start New Arrival Style */
+.new-arrival-cards {
+  max-width: 100%;
+  padding: 25px;
+  margin: 20px auto;
+  background-color: #b3dbd9;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 15px;
+  border-radius: 15px;
+}
+.card img {
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: 100% 0;
+}
+.card {
+  border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .card img {
+    width: 200px;
+    height: 200px;
+  }
+  .new-arrival-cards {
+    justify-items: center;
+    border-radius: 20px;
+  }
+  .card {
+    width: fit-content;
+    justify-self: center;
+  }
+}
+/* End New Arrival Style */
+
+
+
+/* Start AboutUs Style */
+.about {
+  min-width: 100%;
+  background-color: #efe3bf;
+  padding: 30px;
+  min-height: 500px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  padding: 25px;
+}
+
+.about-us-content {
+  margin: 20px auto;
+  max-width: 60%;
+  border-radius: 15px 0px 15px 0px;
+  background-color: #fff;
+  padding: 25px;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-us-content a {
+  background-color: #ca5a52;
+  color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.about-us-content p {
+  font-size: 1rem;
+}
+.about-us-content a:hover {
+  background-color: #b3dbd9;
+  transition: 0.5s;
+  color: black;
+}
+/* End AboutUs Style */
+
+
+
+/* Start Product Style */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 50px;
+  padding: 10px 50px 10px 50px;
+}
+.product-card {
+  border-radius: 15px;
+}
+.product-card img {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  border-radius: 15px 15px 0px 0px;
+}
+@media (max-width: 768px) {
+  .product-card img {
+    width: 200px;
+    height: 200px;
+  }
+}
+.product-card p {
+  text-align: center;
+  background-color: #b3dbd9;
+  color: black;
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0px 0px 15px 15px;
+}
+.product-card:hover {
+  filter: grayscale();
+  transition: 0.5s;
+  transform: rotate(1deg) translateY(-25px);
+}
+
+/* End Product Style */
+
+
+
+/* Start Map Section */
+.map {
+  margin-top: 25px;
+  min-width: 100%;
+  min-height: 400px;
+}
+/* End Map Section */
+
+
+
+/* Start Footer Style */
+footer > ul > li > a {
+  text-decoration: none;
+}
+
+footer > ul > li {
+  list-style-type: none;
+}
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  font-weight: bold;
+  font-size: 10pt;
+  color: #807b7b;
+  background-color: #d9d9d98d;
+  padding: 3vh;
+  border-top: 2px solid #afadad;
+  box-shadow: -1px 4px 13px 2px rgba(175, 173, 173, 1);
+  -webkit-box-shadow: -1px 4px 13px 2px rgba(175, 173, 173, 1);
+  -moz-box-shadow: -1px 4px 13px 2px rgba(175, 173, 173, 1);
+}
+@media (min-width: 992px) {
+  footer{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: auto;
+    row-gap: 4vh;
+    justify-items: center;
+    justify-content: space-around;
+  }
+ 
+}
+/* End Footer Style */
