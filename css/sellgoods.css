@@ -1,0 +1,470 @@
+*{
+    margin: 1;
+    padding: 1;
+    
+        font-family: "Cairo", sans-serif;
+        font-family: "Poppins", sans-serif;
+      
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+    margin-left: 30px;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 100px; */
+  }
+  .nav-items ul{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+  }
+  .nav-items li{
+   margin-right: 50px;
+  }
+  .nav-items a{
+    text-decoration: none;
+    color: #961471;
+    font-weight: bold;
+  }
+  .nav-items ul{
+    list-style:  none;
+  }
+  .menu-icon{
+    display: none;
+    margin-right: 30px;
+  }
+  .nav ul li a::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid #b3dbd9;
+    width: 0;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    transition:0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  
+  .nav ul li a:hover::after {
+    width: 100%;
+  }
+  .nav li a{
+    position: relative;
+  }
+  .menu-btn{
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 15px;
+    width: fit-content;
+    background-color: #fff;
+    box-shadow: 1px 1px #961471;
+    cursor: pointer;
+  }
+  
+    @media (max-width:768px) {
+      .menu-icon{
+        display: block;
+      }
+      .nav-items ul{
+        display: none;
+      }
+    }
+    @media (max-width: 767px) {
+      .nav ul {
+        display: inline-block;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        background-color: #b3dbd9;
+        width: 100%;
+        overflow: hidden;
+        opacity: 90%;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        color: #a33183;
+      }
+  
+      .nav ul li {
+        margin: 15px 0px 20px 30px;
+        text-align: left;
+        z-index: 1;
+      }
+  
+      .nav ul li a {
+        color: var(--primarycolor);
+      }
+  
+      .menu-icon {
+        display: block;
+        cursor: pointer;
+      }
+    }
+.parent{
+    position: relative;
+left: -120px;
+
+}
+
+.title{
+   transform: translate(10px,-130px);
+line-height: 70px;
+text-align: center;
+}
+h1{
+    color: rgb(150, 20, 113);
+font-size:300%;
+font-weight: bold;
+font-family: 'cairo';
+}
+p{
+    font-family: 'cairo';
+    font-size: large;
+color: rgb(144, 58, 72);
+word-spacing: 5px;
+font-style: normal;
+}
+   
+.container{
+
+}
+
+
+.main{
+    border: 4px solid rgb(91, 163, 160);
+    border-radius: 30px;
+    width: 750px;
+    height: 1520px;
+    position: relative;
+left: 190px;
+padding:  40px;
+}
+.main h2 {
+    font-size: xx-large;
+    position: relative;
+    left: 43px;
+    font-family: 'cairo';
+font-size: x-large;
+}
+.main p {
+    font-family: 'cairo';
+font-size: x-large;
+    position: relative;
+    left: 43px;
+    color: black;
+} 
+ .form{
+position: relative;
+left: 43px;
+font-family: 'cairo';
+font-size: x-large;
+display: flex;
+ }
+
+input[type=text], select {
+    padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgb(91, 163, 160);
+  border-radius: 30px;
+  box-sizing: border-box;
+  width: 40%;
+  height: 60px;
+}
+.f-name{
+    position: absolute;
+ 
+    transform: translate(16px,-48px);
+    font-family: 'cairo';
+    font-size: x-large;
+}
+.t-name1{
+    position: absolute;
+transform: translate(5px,-12px);
+width: 100%;
+font-family: 'cairo';
+font-size: x-large;
+}
+
+.b-name{
+    position: absolute;
+    transform: translate(475px,-48px);
+    font-family: 'cairo';
+font-size: x-large;
+}
+.t-name2{
+    position: absolute;
+transform: translate(430px,-12px);
+width: 100%;
+font-family: 'cairo';
+font-size: x-large;
+}
+.browse{
+ position: relative;
+ left: 44px;
+ font-family: 'cairo';
+font-size: x-large;
+}
+.web{
+    position: relative;
+    left: 44px;
+    font-family: 'cairo';
+font-size: x-large;
+}
+.business{
+    position: relative;
+left: 44px;
+font-family: 'cairo';
+font-size: x-large;
+}
+.mob{
+    position: relative;
+left: 44px;
+font-family: 'cairo';
+font-size: x-large;
+}
+.email{
+    position: relative;
+left: 44px;
+font-family: 'cairo';
+font-size: x-large;
+}
+
+.day1{
+    position: relative;
+    left: 44px;
+    font-family: 'cairo';
+font-size: x-large; 
+}
+.day{
+    position: relative;
+left: 44px;
+font-size: 200%;
+
+}
+#pet-select{
+    background-color: #f5f2f2;
+}
+.Submit{
+    position: relative;
+left: 35%;
+width: 100%;
+font-size: 100%;
+}
+
+footer > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer > ul > li {
+  list-style-type: none;
+}
+
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  font-weight: bold;
+  font-size: 15pt;
+  color: #807b7b;
+  background-color: #d9d9d98d;
+  padding: 3vh;
+  border-top: 2px solid #afadad;
+  box-shadow: -1px 4px 13px 2px rgba(175, 173, 173, 1);
+  -webkit-box-shadow: -1px 4px 13px 2px rgba(175, 173, 173, 1);
+  -moz-box-shadow: -1px 4px 13px 2px rgba(175, 173, 173, 1);
+}
+
+
+@media (min-width: 992px) {
+    footer{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: auto;
+    row-gap: 4vh;
+    justify-items: center;
+    justify-content: space-around;
+  }
+ 
+}
+
+@media  screen and (max-width: 600px) {
+    
+    .parent{
+        left: -33px;
+    }
+        
+        .h1{
+            font-size: 6px;
+            transform: translate(33px,78px);
+            line-height: 30px;
+
+        }
+         
+        .parent p{
+            transform: translate(20px,53px);
+            font-size: 7px;
+        }
+        .main{
+            border: 4px solid rgb(91, 163, 160);
+            border-radius: 30px;
+            width: 85%;
+            height: 1425px;
+            position: relative;
+            left: 10px;
+            padding: 12px;
+                    }
+        .main h2{
+            font-size: large;
+        }
+
+        .main p{
+            font-size: 11px;
+            left: 15px;
+        }
+        .f-name{
+            font-family: 'cairo';
+            font-size: large;
+            left: -42px;
+        }
+
+        .t-name1{
+            font-family: 'cairo';
+            left: -50px;
+            width: 115%;
+        }
+
+        .b-name{
+            left: -502px;
+            transform: translate(630px,-51px);
+            font-size: large;
+        }
+
+        .t-name2{
+            left: -502px;
+            transform: translate(623px,-12px);
+            width: 116%;
+        }
+
+        .browse{
+            left: 13px;
+        }
+
+        .web{
+            left: 15px;
+            font-size: 17px;
+        }
+        .btn{
+            width: 115%;
+        }
+
+        .business{
+            font-size: 17px;
+            left: 13px;
+        }
+
+       .mob{
+        left: 15px;
+        font-size: 17px;
+       }
+
+       .mob-btn{
+        width: 115%;
+       }
+
+       .email{
+        left: 15px;
+        font-size: 17px; 
+       }
+
+       .e-btn{
+        width: 115%;
+       }
+
+       .day1{
+        left: 15px;
+        font-size: 17px; 
+       }
+
+       .day{
+        left: 5px;
+       }
+       
+
+       .Submit{
+        transform: translate(-3pc,25px);
+       }
+  }
+
+
+  @media (min-width: 600px) and (max-width: 959px){
+    .logo{
+        transform: translate(-274px,12px);
+line-height: 70px;
+text-align: center;
+       
+        }
+        
+        .h1{
+            font-size: 10px;
+transform: translate(116px,57px);
+line-height: 36px;
+
+        }
+         
+        .parent p{
+            transform: translate(96px,53px); 
+            font-size: 7px;
+        }
+        .t-name2{
+            position: fixed;
+            left: -502px;
+            transform: translate(707px,-12px);
+            font-size: large;
+            font-family: 'cairo';
+            width: 47%;
+
+        }
+  }
+
+
+
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {    
+    .logo{
+        width: 120%;
+position: relative;
+left: 91px;
+    }
+    
+    .h1{
+        font-size: 13px;
+transform: translate(121px,45px);
+line-height: 50px
+
+    }
+    .parent p{
+        transform: translate(94px,55px);
+        font-size: 15px
+    }
+  }  
+
+
+
+ 
+
+
+   
+    
+  
